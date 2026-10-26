@@ -1,9 +1,9 @@
 cask "encore" do
-  version "0.4.2"
-  sha256 "39039c6c8d178c024ea3aa1fdc356cdfe695eb3db8776a1ad65ef40a50baf07e"
+  version "0.4.3"
+  sha256 "e2cf53222aeb9f47b538986fe3a304f50af00d75becfb0ba0c383bf34472dd61"
 
-  url "https://github.com/Kamasoutra/encore/releases/download/v#{version}/Encore-macOS-arm64.zip"
-  name "Encore"
+  url "https://github.com/Kamasoutra/encore/releases/download/v#{version}/Encore-macOS.zip"
+  name "encore"
   desc "Native clipboard manager"
   homepage "https://github.com/Kamasoutra/encore"
 
@@ -13,8 +13,7 @@ cask "encore" do
   end
 
   auto_updates true
-  depends_on arch: :arm64
-  depends_on macos: :sonoma
+  depends_on macos: :monterey
 
   app "Encore.app"
 
@@ -26,8 +25,8 @@ cask "encore" do
   ]
 
   caveats <<~CAVEATS
-    Encore is not notarized yet. If macOS blocks the first launch, open
+    encore is not notarized yet. If macOS blocks the first launch, open
     System Settings → Privacy & Security and choose Open Anyway.
-    Allow Encore in Accessibility so Return pastes directly.
+    Allow encore in Accessibility so Return pastes directly.
   CAVEATS
 end
