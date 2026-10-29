@@ -1,6 +1,6 @@
 cask "encore" do
-  version "0.5.0"
-  sha256 "a0872fa68f3c5fb227382480fe351f3e49e073e878411075408a6db7c65024ef"
+  version "0.6.0"
+  sha256 "0e7cdae1fd1eae41d1c7a6b5ebc3ee3db6c5d844b5ec19d3ff1ab51b3f4484b6"
 
   url "https://github.com/Kamasoutra/encore/releases/download/v#{version}/Encore-macOS.zip"
   name "encore"
